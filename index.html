@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .adlam-display-regular {
+            font-family: "ADLaM Display", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .sora-font {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+        }
+
+        .wrapper {
+            display: flex;
+            position: relative;
+        }
+
+        .dynamic-txt {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dynamic-txt::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #fffdfd;
+            border-left: 2px solid #010101;
+            animation: typing 3s steps(10) infinite;
+        }
+
+        @keyframes typing {
+
+            40%,
+            60% {
+                left: 100%;
+            }
+
+            100% {
+                left: 0;
+                color: #010101;
+                -webkit-text-stroke: 0px;
+            }
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <div class="bg-[#FFF9F4] nav-div flex justify-center">
+        <nav class="sora-font flex  container border border-black p-4  gap-[200px] pl-[60px]">
+
+            <div class="flex w-[231.85px] h-[48px] pl-[50px] ">
+                <img class="w-[47.85px] h-[48px]" src="c1-assets/logo-header.png" alt="">
+                <h1 class="text-[26px] pt-[3px] pl-[10px]">Browse<span class="text-[#FFDC26]">4</span>Pets</h1>
+            </div>
+
+            <ol class="flex gap-[25px]  sora-font text-[20px] pt-[10px] ">
+                <li><a class="" href="#">Find a pet</a></li>
+                <li><a href="#">Breeds</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ol>
+
+            <div class="right-div flex gap-[10px] pl-[70px]">
+                <img class="w-[24px] h-[24px] mt-[10px] mr-[10px]" src="c1-assets/Vector.png" alt="">
+                <img class="w-[24px] h-[24px] mt-[10px]" src="c1-assets/Vector2.png" alt="">
+                <button class="w-[117px] h-[45px] rounded-[8px] border border-[#FFDC26] ">Login</button>
+                <button class="w-[117px] h-[45px] bg-[#FFDC26] rounded-[8px]">Register</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="home h-[925px] text-left  border border-black flex justify-center ">
+        <div class=" mt-[76px] w-[1320px] h-[749px] border border-black flex flex-col justify-start gap-[30px]">
+            <div class="wrapper">
+                <h1 class="dynamic-txt adlam-display-regular text-[56px]">Pamper Your Pet,
+                    <br> Because They Deserve
+                </h1>
+            </div>
+            <h1 class="wrapper  adlam-display-regular text-[56px]" style="
+         position: relative; top: -40px;    ">the Bes</h1>
+            <p class="text-[20px] leadind-[36px] text-gray-500">Discover a world of treats, toys, and essentials
+                handpicked for<br>
+                your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="bg-[#FFDC26] w-[159px] h-[45px] rounded-[8px] text-[20px] text-[black] sora-font">Find a pet</button>
+            <img class="absolute b-[50px] " src="c1-assets/Adobe Express - file.png" alt="">
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+<footer>
+
+</footer>
+
+</html>
