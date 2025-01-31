@@ -44,48 +44,33 @@
             border-left: 2px solid #010101;
             animation: typing 3s steps(10) infinite;
         }
-        .cards{
-            width:200px ;
-            height: 254px;
-            background-color: #F9DF8A;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
-            position: relative;
 
-        }
-        .cars-for-brw{
-          border: 1px solid black;
-           margin-left: -100px;
-           margin-right: -100px;
-           gap: 0px;
-        }
-        .card-div{
-            display: flex;
-            margin-top: -80px;
-            justify-content: center;
-            align-items: center;
+        .card-rounder {
+            position: relative;
+            top: 20px;
+            left: 30px;
             width: 104px;
             height: 104px;
-            border-radius: 100%;
             background-color: #FFFFFF;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cards h3 {
             position: relative;
+            bottom: -60px;
         }
-        .only{
-            position: absolute;
 
-            top: 180px;
-            z-index: 10px;
-          
+        .cards p {
+            position: relative;
+            bottom: -70px;
         }
-        .only-items{
-            position: absolute;
 
-            top: 220px;
-            z-index: 10px;
-        }
+
+
+
 
         @keyframes typing {
 
@@ -101,8 +86,98 @@
             }
         }
 
+        .left-div {
+            width: 424px;
+            height: 402px;
+
+            border-radius: 10px;
+        }
+
+        .left-div h1 {
+            font-size: 30px;
+
+        }
+
+        .left-div {
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .right-div {
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 columns */
+            grid-template-rows: repeat(3, 1fr);
+            /* 3 rows */
+            gap: 20px;
+            margin-left: 20px;
+
+
+        }
+
+
+        .card-of-div {
+            display: grid;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            background-color: #FFFFFF;
+            width: 275px;
+            height: 118px;
+            border-radius: 10px;
+
+        }
+
+
+        @media screen and (max-width: 767px) {
+            .left-div {
+                margin-left: 60px;
+                margin-bottom: 50px;
+
+
+            }
+            .card600{
+                display: block;
+            }
+
+            .right-div {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin-bottom: 50px;
+                width: 358px;
+
+            }
+
+            .col-wi {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .h1-text {
+                width: 800px;
+
+                position: relative;
+                left: -300px;
+            }
+
+            .card-of-div {
+                width: 250.24px;
+            }
+
+            .card600 {
+                display: none;
+            }
+
+            .full-div {
+                height: 100%;
+            }
+
+        }
+
         @media screen and (max-width: 767px) {
 
+            .nav-div {
+                border-bottom: 1px solid #010101;
+            }
             .br-class {
                 display: none;
             }
@@ -122,12 +197,20 @@
                 margin-left: 20px;
 
             }
-            .grid{
+
+            .grid {
                 margin-left: 100px;
             }
-            .card4{
+
+            .card4 {
                 display: none;
             }
+
+            .card600 {
+                display: none;
+            }
+
+
         }
     </style>
 
@@ -136,7 +219,7 @@
 
 
 <body>
-    <div class="bg-[#FFF9F4] nav-div flex justify-center sm:border-b sm:border-black">
+    <div class="nav-div bg-[#FFF9F4] nav-div flex justify-center ">
         <nav class="sora-font flex  container  p-4  gap-[200px] xl:pl-[90px] ">
             <div class="flex sm:items-center sm:justify-start w-[231.85px] h-[48px] pl-0 ">
                 <img class="w-[47.85px] h-[48px] sm:relative sm:" src="c1-assets/logo-header.png" alt="">
@@ -160,8 +243,8 @@
         </nav>
     </div>
 
-    <div class="home h-[925px] text-left border border-black flex justify-center relative">
-        <div class="mt-[76px] w-[1320px] h-[749px] border border-black flex flex-col justify-start gap-[30px]">
+    <div class="home h-[925px] text-left flex justify-center relative">
+        <div class="mt-[76px] w-[1320px] h-[749px]  flex flex-col justify-start gap-[30px]">
             <div class="wrapper">
                 <h1 class="font-h1 dynamic-txt adlam-display-regular xl:text-[56px] sm:text-[30px]">
                     Pamper Your Pet,
@@ -198,7 +281,7 @@
 
 
     <!-- new conatiner start from here -->
-    <div class="new-pannel border border-black">
+    <div class="new-pannel ">
         <div class="container mx-auto p-4">
             <div class="section-header text-center mb-10">
                 <h1 class="adlam-display-regular text-[40px]  accent-color">
@@ -310,57 +393,238 @@
     </div>
 
 
-<!--
+    <!--
     Browse By Categories section -->
-    <div class="pt-[50px] h-[925px] text-left border border-black flex flex-col justify-start items-center">
-        <h1 class="adlam-display-regular   pb-[50px] text-[36px]">Browse By Categories</h1>
-        <div class="cars-for-brw grid grid-cols-6 grid-rows-1 gap-[24px]">
+    <div class="pt-[50px] h-[100%] text-center  flex flex-col  items-center">
+        <div class="container mx-auto p-4">
+            <h2 class="text-2xl font-bold mb-6">
+                Browse By Categories
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[20px] ml-[20px] w-[100%]">
 
-
-            <div class="cards">
-                <div class="card-div"><img src="c1-assets/dog-cartoon.png" alt=""></div>
-                <h1 class="only adlam-display-regular text-[20px]">Dog</h1>
-                <h1 class="sora-font only-items">3 items</h1>
-
-            </div>
-
-
-            <div class="cards">
-                <div class="card-div "><img src="c1-assets/fish-cartoon.png" alt=""></div>
-                <h1 class="only adlam-display-regular text-[20px]">Fish</h1>
-                <h1 class="sora-font only-items">3 items</h1>
-
-            </div>
-
-            <div class="cards">
-                <div class="card-div">
-                    <img src="c1-assets/cat-cartoon.png" alt=""></div>
-                    <h1 class="only adlam-display-regular text-[20px]">Cat</h1>
-                <h1 class="sora-font only-items">3 items</h1>
-
-            </div>
-
-            <div class="cards">
-                <div class="card-div"><img src="c1-assets/bird-cartoon.png" alt=""></div>
-                <h1 class="only adlam-display-regular text-[20px]">Bird</h1>
-                <h1 class="sora-font only-items">3 items</h1>
-
-            </div>
-
-            <div class="cards">
-                <div class="card-div"><img src="c1-assets/mouse-cartoon.png" alt=""></div>
-                <h1 class="only adlam-display-regular text-[20px]"> Mouse</h1>
-                <h1 class="sora-font only-items">3 items</h1>
-
-            </div>
-            <div class="cards">
-                <div class="card-div"> <img src="c1-assets/rabbit-cartoon.png" alt=""></div>
-                <h1 class="only adlam-display-regular text-[20px]">Rabbit</h1>
-                <h1 class="sora-font only-items">3 items</h1>
-
+                <div class=" cards bg-[#F9DF8A] p-4 w-[200px] h-[254px] rounded-lg text-center">
+                    <div class="card-rounder">
+                        <img alt="Dog icon" class="mx-auto mb-2" src="c1-assets/dog-cartoon.png" />
+                    </div>
+                    <h3 class="font-bold">
+                        Dog
+                    </h3>
+                    <p>
+                        3 items
+                    </p>
+                </div>
+                <div class=" cards bg-[#F9DF8A] w-[200px] h-[254px] p-4 rounded-lg text-center">
+                    <div class="card-rounder">
+                        <img alt="Dog icon" class="mx-auto mb-2" src="c1-assets/fish-cartoon.png" />
+                    </div>
+                    <h3 class="font-bold">
+                        Fish
+                    </h3>
+                    <p>
+                        3 items
+                    </p>
+                </div>
+                <div class=" cards bg-[#F9DF8A] w-[200px] h-[254px] p-4 rounded-lg text-center">
+                    <div class="card-rounder">
+                        <img alt="Dog icon" class="mx-auto mb-2" src="c1-assets/cat-cartoon.png" />
+                    </div>
+                    <h3 class="font-bold">
+                        Cat
+                    </h3>
+                    <p>
+                        3 items
+                    </p>
+                </div>
+                <div class=" cards bg-[#F9DF8A]  w-[200px] h-[254px] p-4 rounded-lg text-center">
+                    <div class="card-rounder">
+                        <img alt="Dog icon" class="mx-auto mb-2" src="c1-assets/bird-cartoon.png" />
+                    </div>
+                    <h3 class="font-bold">
+                        Birds
+                    </h3>
+                    <p>
+                        3 items
+                    </p>
+                </div>
+                <div class=" cards bg-[#F9DF8A] w-[200px] h-[254px] p-4 rounded-lg text-center">
+                    <div class="card-rounder">
+                        <img alt="Dog icon" class="mx-auto mb-2" src="c1-assets/mouse-cartoon.png" />
+                    </div>
+                    <h3 class="font-bold">
+                        Small pet
+                    </h3>
+                    <p>
+                        3 items
+                    </p>
+                </div>
+                <div class=" cards bg-[#F9DF8A] w-[200px] h-[254px] p-4 rounded-lg text-center">
+                    <div class="card-rounder">
+                        <img alt="Dog icon" class="mx-auto mb-2" src="c1-assets/rabbit-cartoon.png" />
+                    </div>
+                    <h3 class="font-bold">
+                        Rabit
+                    </h3>
+                    <p>
+                        2 items
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- this is treing part -->
+
+    <div class="full-div w-[100%]  h-[650px] bg-[#FFF9F4]">
+        <h1 class="h1-text pl-[320px] text-left adlam-display-regular text-[36px] font-regular
+    pt-[100px] pb-[30px]">Trending Pet Products</h1>
+        <div class="col-wi w-[100%]  flex justify-center ">
+            <div class="left-div bg-[#F9DF8A]">
+                <div class="pl-[30px]">
+                    <h1 class="adlam-display-regular pt-[50px] pb-[10px]">T-Shirt For Dogs</h1>
+                    <p class=" sora-font text-[18px] text-gray-600">Discover a world of treats,toys,and <br>
+                        essential handpicked for</p>
+                    <button class="bg-[#FFF9F4] mt-[20px] w-[160px] sora-font text-[15px] h-[46px] rounded-[12px]">Shop
+                        Now</button>
+                </div>
+                <img class="w-[200px] relative left-[190px] top-[-80px]" src="c1-assets/cute-pet-mid.png" alt="">
+            </div>
+
+            <div class="right-div">
+                <div class="card-of-div flex gap-[20px]">
+                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/dog-cartoon.png"
+                        alt="">
+                    <div class="text-of flex flex-col relative left-[30px]">
+                        <img class="w-[18px] h-[18px] relative bottom-[-20px] left-[-5px]"
+                            src="c1-assets/fi_2107957.png" alt="">
+                        <p class="text-[16px] sora-font font-medium relative left-[20px]">4.5</p>
+                        <h3 class="sora-font text-[20px] font-medium">Pet Bed</h3>
+                        <p class="sora-font text-[16px]">$39.99</p>
+                    </div>
+                </div>
+
+                <div class="card-of-div flex gap-[20px]">
+                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/dog-cartoon.png"
+                        alt="">
+                    <div class="text-of flex flex-col relative left-[30px]">
+                        <img class="w-[18px] h-[18px] relative bottom-[-20px] left-[-5px]"
+                            src="c1-assets/fi_2107957.png" alt="">
+                        <p class="text-[16px] sora-font font-medium relative left-[20px]">4.5</p>
+                        <h3 class="sora-font text-[20px] font-medium">Pet Bed</h3>
+                        <p class="sora-font text-[16px]">$39.99</p>
+                    </div>
+                </div>
+
+                <div class="card-of-div flex gap-[20px]">
+                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/dog-cartoon.png"
+                        alt="">
+                    <div class="text-of flex flex-col relative left-[30px]">
+                        <img class="w-[18px] h-[18px] relative bottom-[-20px] left-[-5px]"
+                            src="c1-assets/fi_2107957.png" alt="">
+                        <p class="text-[16px] sora-font font-medium relative left-[20px]">4.5</p>
+                        <h3 class="sora-font text-[20px] font-medium">Pet Bed</h3>
+                        <p class="sora-font text-[16px]">$39.99</p>
+                    </div>
+                </div>
+
+                <div class="card-of-div flex gap-[20px]">
+                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/dog-cartoon.png"
+                        alt="">
+                    <div class="text-of flex flex-col relative left-[30px]">
+                        <img class="w-[18px] h-[18px] relative bottom-[-20px] left-[-5px]"
+                            src="c1-assets/fi_2107957.png" alt="">
+                        <p class="text-[16px] sora-font font-medium relative left-[20px]">4.5</p>
+                        <h3 class="sora-font text-[20px] font-medium">Pet Bed</h3>
+                        <p class="sora-font text-[16px]">$39.99</p>
+                    </div>
+                </div>
+
+
+                <div class="card-of-div flex gap-[20px]">
+                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/dog-cartoon.png"
+                        alt="">
+                    <div class="text-of flex flex-col relative left-[30px]">
+                        <img class="w-[18px] h-[18px] relative bottom-[-20px] left-[-5px]"
+                            src="c1-assets/fi_2107957.png" alt="">
+                        <p class="text-[16px] sora-font font-medium relative left-[20px]">4.5</p>
+                        <h3 class="sora-font text-[20px] font-medium">Pet Bed</h3>
+                        <p class="sora-font text-[16px]">$39.99</p>
+                    </div>
+                </div>
+
+
+                <div class="card-of-div flex gap-[20px]">
+                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/dog-cartoon.png"
+                        alt="">
+                    <div class="text-of flex flex-col relative left-[30px]">
+                        <img class="w-[18px] h-[18px] relative bottom-[-20px] left-[-5px]"
+                            src="c1-assets/fi_2107957.png" alt="">
+                        <p class="text-[16px] sora-font font-medium relative left-[20px]">4.5</p>
+                        <h3 class="sora-font text-[20px] font-medium">Pet Bed</h3>
+                        <p class="sora-font text-[16px]">$39.99</p>
+                    </div>
+                </div>
+
+
+                <div class="card-of-div flex gap-[20px]">
+                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/dog-cartoon.png"
+                        alt="">
+                    <div class="text-of flex flex-col relative left-[30px]">
+                        <img class="w-[18px] h-[18px] relative bottom-[-20px] left-[-5px]"
+                            src="c1-assets/fi_2107957.png" alt="">
+                        <p class="text-[16px] sora-font font-medium relative left-[20px]">4.5</p>
+                        <h3 class="sora-font text-[20px] font-medium">Pet Bed</h3>
+                        <p class="sora-font text-[16px]">$39.99</p>
+                    </div>
+                </div>
+
+
+                <div class="card-of-div flex gap-[20px]">
+                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/dog-cartoon.png"
+                        alt="">
+                    <div class="text-of flex flex-col relative left-[30px]">
+                        <img class="w-[18px] h-[18px] relative bottom-[-20px] left-[-5px]"
+                            src="c1-assets/fi_2107957.png" alt="">
+                        <p class="text-[16px] sora-font font-medium relative left-[20px]">4.5</p>
+                        <h3 class="sora-font text-[20px] font-medium">Pet Bed</h3>
+                        <p class="sora-font text-[16px]">$39.99</p>
+                    </div>
+                </div>
+
+
+                <div class="card600 card-of-div flex gap-[20px]">
+                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/dog-cartoon.png"
+                        alt="">
+                    <div class="text-of flex flex-col relative left-[30px]">
+                        <img class="w-[18px] h-[18px] relative bottom-[-20px] left-[-5px]"
+                            src="c1-assets/fi_2107957.png" alt="">
+                        <p class="text-[16px] sora-font font-medium relative left-[20px]">4.5</p>
+                        <h3 class="sora-font text-[20px] font-medium">Pet Bed</h3>
+                        <p class="sora-font text-[16px]">$39.99</p>
+                    </div>
+                </div>
+
+                <div class="xl:hidden xl:none card-of-div flex gap-[20px]">
+                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/dog-cartoon.png"
+                        alt="">
+                    <div class="text-of flex flex-col relative left-[30px]">
+                        <img class="w-[18px] h-[18px] relative bottom-[-20px] left-[-5px]"
+                            src="c1-assets/fi_2107957.png" alt="">
+                        <p class="text-[16px] sora-font font-medium relative left-[20px]">4.5</p>
+                        <h3 class="sora-font text-[20px] font-medium">Pet Bed</h3>
+                        <p class="sora-font text-[16px]">$39.99</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
 
 
 
