@@ -44,6 +44,48 @@
             border-left: 2px solid #010101;
             animation: typing 3s steps(10) infinite;
         }
+        .cards{
+            width:200px ;
+            height: 254px;
+            background-color: #F9DF8A;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            position: relative;
+
+        }
+        .cars-for-brw{
+          border: 1px solid black;
+           margin-left: -100px;
+           margin-right: -100px;
+           gap: 0px;
+        }
+        .card-div{
+            display: flex;
+            margin-top: -80px;
+            justify-content: center;
+            align-items: center;
+            width: 104px;
+            height: 104px;
+            border-radius: 100%;
+            background-color: #FFFFFF;
+            position: relative;
+        }
+        .only{
+            position: absolute;
+
+            top: 180px;
+            z-index: 10px;
+          
+        }
+        .only-items{
+            position: absolute;
+
+            top: 220px;
+            z-index: 10px;
+        }
 
         @keyframes typing {
 
@@ -61,19 +103,30 @@
 
         @media screen and (max-width: 767px) {
 
-            .br-class{
+            .br-class {
                 display: none;
             }
-            .font-h1{
+
+            .font-h1 {
                 padding-left: 20px;
                 font-size: 30px;
                 padding-top: 10px;
             }
-            .font-p{
+
+            .font-p {
                 padding-left: 20px;
+                font-size: 16px;
             }
-            .btn-p{
+
+            .btn-p {
                 margin-left: 20px;
+
+            }
+            .grid{
+                margin-left: 100px;
+            }
+            .card4{
+                display: none;
             }
         }
     </style>
@@ -91,13 +144,7 @@
                     Browse<span class="text-[#FFDC26]">4</span>Pets
                 </h1>
             </div>
-
-
-
             <img class="xl:hidden xl:none ml-[70px] w-[30px] h-[30]" src="c1-assets/bars-3.png" alt="">
-
-
-
             <ol class="xl:flex gap-[25px]  xl:sora-font text-[20px] pt-[10px] hidden  sm:block ">
                 <li><a class="" href="#">Find a pet</a></li>
                 <li><a href="#">Breeds</a></li>
@@ -146,15 +193,175 @@
                 src="c1-assets/Adobe Express - file.png" alt="">
         </div>
     </div>
-
-
-
     </div>
     </div>
 
-    <div class="new-pannel">
 
+    <!-- new conatiner start from here -->
+    <div class="new-pannel border border-black">
+        <div class="container mx-auto p-4">
+            <div class="section-header text-center mb-10">
+                <h1 class="adlam-display-regular text-[40px]  accent-color">
+                    Cat Care Tips
+                </h1>
+                <p class="sora-font text-lg text-gray-600">
+                    Helpful advice to keep your cat healthy, happy, and safe.
+                </p>
+            </div>
+            <div class="sora-font grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  xl:ml-[100px]">
+                <div
+                    class="card bg-white w-[300px] mt-[20px] rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2">
+                    <img alt="A cat eating from a bowl, representing proper feeding habits"
+                        class="w-full h-48 object-cover" src="c2/cat-out-hunting.jpg" />
+                    <div class="card-content p-4">
+                        <h2 class="card-title text-2xl font-bold mb-2 accent-color">
+                            Proper Feeding Habits
+                        </h2>
+                        <p class="card-description text-gray-600 mb-4">
+                            Ensure your cat is getting the right nutrients by feeding them a balanced diet.
+                        </p>
+                        <a class="read-more text-[#FFDC26] font-bold" href="#">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="card bg-white w-[300px] mt-[20px]  rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2">
+                    <img alt="A cat playing with a toy, representing the importance of playtime"
+                        class="w-full h-48 object-cover" src="c2/cut cat serhio 02-1813x1811-720x719.jpg" />
+                    <div class="card-content p-4">
+                        <h2 class="card-title text-2xl font-bold mb-2 accent-color">
+                            Importance of Playtime
+                        </h2>
+                        <p class="card-description text-gray-600 mb-4">
+                            Regular playtime helps keep your cat physically and mentally stimulated.
+                        </p>
+                        <a class="read-more text-[#FFDC26] font-bold" href="#">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="card bg-white w-[300px] mt-[20px]  rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2">
+                    <img alt="A cat being groomed, representing grooming tips" class="w-full h-48 object-cover"
+                        src="c2/image-83814-800.jpg" />
+                    <div class="card-content p-4">
+                        <h2 class="card-title text-2xl font-bold mb-2 accent-color">
+                            Grooming Tips
+                        </h2>
+                        <p class="card-description text-gray-600 mb-4">
+                            Keep your cat's coat healthy and shiny with regular grooming sessions.
+                        </p>
+                        <a class="read-more text-[#FFDC26] font-bold" href="#">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="card bg-white w-[300px] mt-[20px]  rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2 card4">
+                    <img alt="A cat at the vet, representing regular vet check-ups" class="w-full h-48 object-cover"
+                        src="c2/imrs.avif" />
+                    <div class="card-content p-4">
+                        <h2 class="card-title text-2xl font-bold mb-2 accent-color">
+                            Regular Vet Check-ups
+                        </h2>
+                        <p class="card-description text-gray-600 mb-4">
+                            Routine vet visits are crucial for maintaining your cat's health.
+                        </p>
+                        <a class="read-more text-[#FFDC26] font-bold" href="#">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="card bg-white w-[300px] mt-[20px]  rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2 card4">
+                    <img alt="A cat using a litter box, representing litter box maintenance"
+                        class="w-full h-48 object-cover" src="c2/kitten.jpg" />
+                    <div class="card-content p-4">
+                        <h2 class="card-title text-2xl font-bold mb-2 accent-color">
+                            Litter Box Maintenance
+                        </h2>
+                        <p class="card-description text-gray-600 mb-4">
+                            Keep your cat's litter box clean to ensure they use it regularly.
+                        </p>
+                        <a class="read-more text-[#FFDC26] font-bold" href="#">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="card bg-white w-[300px] mt-[20px]  rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2 card4">
+                    <img alt="A cat being petted, representing bonding with your cat" class="w-full h-48 object-cover"
+                        src="c2/kitty-cat-kitten-pet-45201.jpeg" />
+                    <div class="card-content p-4">
+                        <h2 class="card-title text-2xl font-bold mb-2 accent-color">
+                            Bonding with Your Cat
+                        </h2>
+                        <p class="card-description text-gray-600 mb-4">
+                            Spend quality time with your cat to strengthen your bond.
+                        </p>
+                        <a class="read-more text-[#FFDC26] font-bold" href="#">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+<!--
+    Browse By Categories section -->
+    <div class="pt-[50px] h-[925px] text-left border border-black flex flex-col justify-start items-center">
+        <h1 class="adlam-display-regular   pb-[50px] text-[36px]">Browse By Categories</h1>
+        <div class="cars-for-brw grid grid-cols-6 grid-rows-1 gap-[24px]">
+
+
+            <div class="cards">
+                <div class="card-div"><img src="c1-assets/dog-cartoon.png" alt=""></div>
+                <h1 class="only adlam-display-regular text-[20px]">Dog</h1>
+                <h1 class="sora-font only-items">3 items</h1>
+
+            </div>
+
+
+            <div class="cards">
+                <div class="card-div "><img src="c1-assets/fish-cartoon.png" alt=""></div>
+                <h1 class="only adlam-display-regular text-[20px]">Fish</h1>
+                <h1 class="sora-font only-items">3 items</h1>
+
+            </div>
+
+            <div class="cards">
+                <div class="card-div">
+                    <img src="c1-assets/cat-cartoon.png" alt=""></div>
+                    <h1 class="only adlam-display-regular text-[20px]">Cat</h1>
+                <h1 class="sora-font only-items">3 items</h1>
+
+            </div>
+
+            <div class="cards">
+                <div class="card-div"><img src="c1-assets/bird-cartoon.png" alt=""></div>
+                <h1 class="only adlam-display-regular text-[20px]">Bird</h1>
+                <h1 class="sora-font only-items">3 items</h1>
+
+            </div>
+
+            <div class="cards">
+                <div class="card-div"><img src="c1-assets/mouse-cartoon.png" alt=""></div>
+                <h1 class="only adlam-display-regular text-[20px]"> Mouse</h1>
+                <h1 class="sora-font only-items">3 items</h1>
+
+            </div>
+            <div class="cards">
+                <div class="card-div"> <img src="c1-assets/rabbit-cartoon.png" alt=""></div>
+                <h1 class="only adlam-display-regular text-[20px]">Rabbit</h1>
+                <h1 class="sora-font only-items">3 items</h1>
+
+            </div>
+        </div>
+    </div>
+
 
 
 
