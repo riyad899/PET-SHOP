@@ -58,6 +58,24 @@
                 -webkit-text-stroke: 0px;
             }
         }
+
+        @media screen and (max-width: 767px) {
+
+            .br-class{
+                display: none;
+            }
+            .font-h1{
+                padding-left: 20px;
+                font-size: 30px;
+                padding-top: 10px;
+            }
+            .font-p{
+                padding-left: 20px;
+            }
+            .btn-p{
+                margin-left: 20px;
+            }
+        }
     </style>
 
 </head>
@@ -65,21 +83,28 @@
 
 
 <body>
-    <div class="bg-[#FFF9F4] nav-div flex justify-center">
-        <nav class="sora-font flex  container border border-black p-4  gap-[200px] pl-[60px]">
-
-            <div class="flex w-[231.85px] h-[48px] pl-[50px] ">
-                <img class="w-[47.85px] h-[48px]" src="c1-assets/logo-header.png" alt="">
-                <h1 class="text-[26px] pt-[3px] pl-[10px]">Browse<span class="text-[#FFDC26]">4</span>Pets</h1>
+    <div class="bg-[#FFF9F4] nav-div flex justify-center sm:border-b sm:border-black">
+        <nav class="sora-font flex  container  p-4  gap-[200px] xl:pl-[90px] ">
+            <div class="flex sm:items-center sm:justify-start w-[231.85px] h-[48px] pl-0 ">
+                <img class="w-[47.85px] h-[48px] sm:relative sm:" src="c1-assets/logo-header.png" alt="">
+                <h1 class="hidden sm:block text-[26px] pt-[3px] pl-[10px]">
+                    Browse<span class="text-[#FFDC26]">4</span>Pets
+                </h1>
             </div>
 
-            <ol class="flex gap-[25px]  sora-font text-[20px] pt-[10px] ">
+
+
+            <img class="xl:hidden xl:none ml-[70px] w-[30px] h-[30]" src="c1-assets/bars-3.png" alt="">
+
+
+
+            <ol class="xl:flex gap-[25px]  xl:sora-font text-[20px] pt-[10px] hidden  sm:block ">
                 <li><a class="" href="#">Find a pet</a></li>
                 <li><a href="#">Breeds</a></li>
                 <li><a href="#">Contact us</a></li>
             </ol>
 
-            <div class="right-div flex gap-[10px] pl-[70px]">
+            <div class="xl:right-div xl:flex xl:gap-[10px] xl:pl-[70px] hidden  sm:block ">
                 <img class="w-[24px] h-[24px] mt-[10px] mr-[10px]" src="c1-assets/Vector.png" alt="">
                 <img class="w-[24px] h-[24px] mt-[10px]" src="c1-assets/Vector2.png" alt="">
                 <button class="w-[117px] h-[45px] rounded-[8px] border border-[#FFDC26] ">Login</button>
@@ -88,25 +113,46 @@
         </nav>
     </div>
 
-    <div class="home h-[925px] text-left  border border-black flex justify-center ">
-        <div class=" mt-[76px] w-[1320px] h-[749px] border border-black flex flex-col justify-start gap-[30px]">
+    <div class="home h-[925px] text-left border border-black flex justify-center relative">
+        <div class="mt-[76px] w-[1320px] h-[749px] border border-black flex flex-col justify-start gap-[30px]">
             <div class="wrapper">
-                <h1 class="dynamic-txt adlam-display-regular text-[56px]">Pamper Your Pet,
-                    <br> Because They Deserve
+                <h1 class="font-h1 dynamic-txt adlam-display-regular xl:text-[56px] sm:text-[30px]">
+                    Pamper Your Pet,
+                    <br>
+                    Because They Deserve
                 </h1>
             </div>
-            <h1 class="wrapper  adlam-display-regular text-[56px]" style="
-         position: relative; top: -40px;    ">the Bes</h1>
-            <p class="text-[20px] leadind-[36px] text-gray-500">Discover a world of treats, toys, and essentials
-                handpicked for<br>
-                your furry friends. Shop now and make tails wag with joy!</p>
-            <button class="bg-[#FFDC26] w-[159px] h-[45px] rounded-[8px] text-[20px] text-[black] sora-font">Find a pet</button>
-            <img class="absolute b-[50px] " src="c1-assets/Adobe Express - file.png" alt="">
-        </div>
+            <h1 class="font-h1 wrapper adlam-display-regular xl:text-[56px] sm:text-[40px]"
+                style="position: relative; top: -40px;">
+                the Best
+            </h1>
 
+            <p class="font-p text-[20px] leading-[36px] text-gray-500 pt-[-50px] relative top-[-60px]">
+                Discover a world of treats, toys, and
+                <br class="sm:block xl:hidden">
+                essentials handpicked for
+                <br class="br-class">
+                your furry
+                friends.
+                <br class="sm:block xl:hidden">
+                Shop now and make tails wag with joy!
+            </p>
+
+            <button
+                class="btn-p bg-[#FFDC26] w-[159px] h-[45px] rounded-[8px] text-[20px] text-[black] sora-font relative bottom-[60px]">
+                Find a pet
+            </button>
+            <img class="xl:absolute xl:b-[50px] sm:relative sm:mt-[0px] mt-[-200px]"
+                src="c1-assets/Adobe Express - file.png" alt="">
+        </div>
     </div>
 
 
+
+    </div>
+    </div>
+
+    <div class="new-pannel">
 
     </div>
 
