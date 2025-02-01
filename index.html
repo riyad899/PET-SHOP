@@ -24,6 +24,7 @@
             font-optical-sizing: auto;
         }
 
+
         .wrapper {
             display: flex;
             position: relative;
@@ -32,6 +33,18 @@
         .dynamic-txt {
             position: relative;
             overflow: hidden;
+        }
+
+        button:hover {
+            background-color: #9a8e52;
+        }
+
+        .btn-p{
+            z-index: 10px;
+        }
+        .btn-p:hover {
+            z-index: 10px;
+            background-color: #9a8e52;
         }
 
         .dynamic-txt::after {
@@ -135,7 +148,8 @@
 
 
             }
-            .card600{
+
+            .card600 {
                 display: block;
             }
 
@@ -178,6 +192,7 @@
             .nav-div {
                 border-bottom: 1px solid #010101;
             }
+
             .br-class {
                 display: none;
             }
@@ -194,7 +209,10 @@
             }
 
             .btn-p {
+                position: relative;
+
                 margin-left: 20px;
+                z-index: 10px;
 
             }
 
@@ -214,268 +232,315 @@
         }
 
 
-        .conatiner-div-middle{
+        .conatiner-div-middle {
             width: 100%;
             height: 1000px;
 
             display: flex;
             justify-content: center;
         }
-        .mid-containe2{
+
+        .mid-containe2 {
             width: 1400px;
 
         }
-        .img-puppies{
+
+        .img-puppies {
             position: relative;
 
         }
 
 
         @media screen and (max-width: 767px) {
-            .div-2{
+            .div-2 {
                 display: flex;
                 flex-direction: column;
             }
-            .mid-containe2{
+
+            .mid-containe2 {
                 margin-top: 100px;
             }
-            .left-card-div{
+
+            .left-card-div {
                 margin-left: 20px;
                 width: 20px;
             }
-            .text-offf{
+
+            .text-offf {
                 margin-left: 100px;
             }
-            .left-car{
+
+            .left-car {
                 width: 20px;
             }
-            .right-div-card2{
+
+            .right-div-card2 {
                 margin-left: 10px;
                 width: 554px;
             }
-            .left{
+
+            .left {
                 margin-left: 10px;
                 width: 554px;
             }
-            .img-div23{
+
+            .img-div23 {
                 width: 300px;
                 height: 400px;
                 position: relative;
                 top: -40px;
-                left:290px;
+                left: 290px;
 
             }
-            .text-div-of2{
+
+            .text-div-of2 {
                 position: relative;
                 margin-left: -60px;
             }
+
             .para1 {
                 display: none;
             }
-            .para2{
+
+            .para2 {
                 color: #FFFFFF;
             }
 
         }
 
 
-        .conatiner-div-middle{
+        .conatiner-div-middle {
             width: 100%;
             height: 1000px;
 
             display: flex;
             justify-content: center;
         }
-        .mid-containe2{
+
+        .mid-containe2 {
             width: 1400px;
 
         }
-        .img-puppies{
+
+        .img-puppies {
             position: relative;
 
         }
 
-        .footer-secton{
-    background: #F5F5F5;
-    display: flex;
-    justify-content: center;
-}
-footer{
-    width: 1440px;
-    height: 519px;
-    background-color: #fade56cd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer-item{
-    width: 1070.91px;
-    height: 222px;
-    /* border: 1px solid black; */
-    display: flex;
-    gap: 170px;
-}
-.logo-part h1{
+        .footer-secton {
+            background: #F5F5F5;
+            display: flex;
+            justify-content: center;
+        }
 
-    font-size: 42.14px;
-    line-height: 39.5px;
-    color: black;
-    padding-top: 6px;
-    padding-left: 10px;
+        footer {
+            width: 1440px;
+            height: 519px;
+            background-color: #fade56cd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
+        .footer-item {
+            width: 1070.91px;
+            height: 222px;
+            /* border: 1px solid black; */
+            display: flex;
+            gap: 170px;
+        }
 
-}
-.logo-part img{
-    width: 47.6px;
-    height: 48px;
+        .logo-part h1 {
+
+            font-size: 42.14px;
+            line-height: 39.5px;
+            color: black;
+            padding-top: 6px;
+            padding-left: 10px;
 
 
-}
-.logo-part{
-    display: flex;
-}
-.text p{
-    padding-top: 25px;
+        }
 
-    font-size: 20px;
-    color: gray;
-    padding-left: 10px;
+        .logo-part img {
+            width: 47.6px;
+            height: 48px;
 
-}
-.About-part h2{
 
-   font-size: 24px;
-   color:black;
+        }
 
-}
+        .logo-part {
+            display: flex;
+        }
 
-.About-part ol{
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.About-part ol li{
-    list-style: none;
-    font-size: 20px;
+        .text p {
+            padding-top: 25px;
 
-    color:black;
-}
-.About-part ol li a{
-    text-decoration: none;
-    color: black;
-}
-.links h2{
-    font-size: 26px;
-    color:black;
+            font-size: 20px;
+            color: gray;
+            padding-left: 10px;
 
-}
-.links ol li{
-    list-style: none;
+        }
 
-}
-.links ol{
-    padding-top: 20px;
-    display: flex;
+        .About-part h2 {
 
-    gap: 5px;
-}
-.br-not{
-    display: none;
-}
-@media (max-width: 768px) {
-    footer{
-        width: 100%;
-        height: 2044px;
-        padding-top: 300px;
+            font-size: 24px;
+            color: black;
 
-    }
-    .footer-item{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        gap: 50px;
-        padding-left: 20px;
-        margin-bottom: 500px;
-    }
-    .logo-part img{
-        width: 69.23px;
+        }
 
-    }
-    .logo-part h1{
-        font-size: 35.73px;
-        text-align: left;
-        position: relative;
-        top: -15px;
-        left: 10px;
+        .About-part ol {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-    }
-    .br-not{
-        display: block;
-    }
-    .text p{
-        font-size: 16px;
-    }
+        .About-part ol li {
+            list-style: none;
+            font-size: 20px;
 
-}
+            color: black;
+        }
+
+        .About-part ol li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .links h2 {
+            font-size: 26px;
+            color: black;
+
+        }
+
+        .links ol li {
+            list-style: none;
+
+        }
+
+        .links ol {
+            padding-top: 20px;
+            display: flex;
+
+            gap: 5px;
+        }
+
+        .br-not {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                width: 100%;
+                height: 2044px;
+                padding-top: 300px;
+
+            }
+
+            .footer-item {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                gap: 50px;
+                padding-left: 20px;
+                margin-bottom: 500px;
+            }
+
+            .logo-part img {
+                width: 69.23px;
+
+            }
+
+            .logo-part h1 {
+                font-size: 35.73px;
+                text-align: left;
+                position: relative;
+                top: -15px;
+                left: 10px;
+
+            }
+
+            .br-not {
+                display: block;
+            }
+
+            .text p {
+                font-size: 16px;
+            }
+
+        }
 
 
         @media screen and (max-width: 767px) {
-            .div-2{
+            .div-2 {
                 display: flex;
                 flex-direction: column;
             }
-            .conatiner-div-middle{
+
+            .conatiner-div-middle {
                 height: 2000px;
             }
-            .mid-containe2{
+
+            .mid-containe2 {
                 margin-top: 100px;
             }
-            .left-card-div{
+
+            .left-card-div {
                 margin-left: 20px;
                 width: 20px;
             }
-            .text-offf{
+
+            .text-offf {
                 margin-left: 100px;
             }
-            .left-car{
+
+            .left-car {
                 width: 20px;
             }
-            .right-div-card2{
+
+            .right-div-card2 {
                 margin-left: 10px;
                 width: 554px;
             }
-            .left{
+
+            .left {
                 margin-left: 10px;
                 width: 554px;
             }
-            .img-div23{
+
+            .img-div23 {
                 width: 300px;
                 height: 400px;
                 position: relative;
                 top: -40px;
-                left:290px;
+                left: 290px;
 
             }
-            .text-div-of2{
+
+            .text-div-of2 {
                 position: relative;
                 margin-left: -60px;
             }
+
             .para1 {
                 display: none;
             }
-            .para2{
+
+            .para2 {
                 color: black;
             }
-            .mid-con{
+
+            .mid-con {
                 position: absolute;
                 z-index: 1;
                 top: 5400px;
             }
-            .conatiner-div-middle{
+
+            .conatiner-div-middle {
                 padding-bottom: -1000px;
             }
-            .new-pannel{
+
+            .new-pannel {
                 margin-top: -200px;
             }
 
@@ -540,9 +605,12 @@ footer{
             </p>
 
             <button
-                class="btn-p bg-[#FFDC26] w-[159px] h-[45px] rounded-[8px] text-[20px] text-[black] sora-font relative bottom-[60px]">
-                Find a pet
-            </button>
+            class="btn-p z-50 bg-[#FFDC26] w-[159px] h-[45px] rounded-[8px] text-[20px] text-black sora-font relative bottom-0 hover:bg-[#a3915a] transition duration-300">
+            Find a pet
+          </button>
+
+
+
             <img class="xl:absolute xl:b-[50px] sm:relative sm:mt-[0px] mt-[-200px]"
                 src="c1-assets/Adobe Express - file.png" alt="">
         </div>
@@ -811,8 +879,7 @@ footer{
 
 
                 <div class="card-of-div flex gap-[20px]">
-                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/pet-couch.png"
-                        alt="">
+                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/pet-couch.png" alt="">
                     <div class="text-of flex flex-col relative left-[30px]">
                         <img class="w-[18px] h-[18px] relative bottom-[-20px] left-[-5px]"
                             src="c1-assets/fi_2107957.png" alt="">
@@ -850,8 +917,7 @@ footer{
 
 
                 <div class="card-of-div flex gap-[20px]">
-                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/pet-couch.png"
-                        alt="">
+                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/pet-couch.png" alt="">
                     <div class="text-of flex flex-col relative left-[30px]">
                         <img class="w-[18px] h-[18px] relative bottom-[-20px] left-[-5px]"
                             src="c1-assets/fi_2107957.png" alt="">
@@ -863,8 +929,7 @@ footer{
 
 
                 <div class="card-of-div div-hide flex gap-[20px] hidden xl:block ">
-                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/pet-couch.png"
-                        alt="">
+                    <img class="relative top-[40px] left-[30px] w-[48px] h-[48px]" src="c1-assets/pet-couch.png" alt="">
                     <div class="text-of flex flex-col relative top-[-35px] left-[100px]">
                         <img class="w-[18px] h-[18px] relative bottom-[-20px] left-[-5px]"
                             src="c1-assets/fi_2107957.png" alt="">
@@ -890,17 +955,17 @@ footer{
 
 
 
-                </div>
             </div>
-
         </div>
+
+    </div>
 
     </div>
 
 
     <!-- this is low price part -->
 
-<!-- <div class="conatiner-div-middle">
+    <!-- <div class="conatiner-div-middle">
     <div class="mid-containe2 xl:mb-[300px] flex flex-col justify-center">
         <h1 class="text-left pb-[20px] pl-[40px] adlam-display-regular text-[36px]  text-of">Everyday low Price</h1>
         <div class="div-2 flex justify-center gap-[20px]">
@@ -928,91 +993,98 @@ footer{
 
 </div> -->
 
-<div class="conatiner-div-middle xl:pb-[300px]">
-    <div class="mid-containe2 flex flex-col justify-center">
-        <h1 class="text-left pb-[20px] pl-[40px] adlam-display-regular text-[36px]  text-offf">Everyday low Price</h1>
-        <div class="div-2 flex justify-center gap-[20px]">
-            <div class="left  text-left bg-gradient-to-b from-[#F8CCFB] to-[#ACD2FD] rounded-[12px] xl:w-[789px] h-[480px]">
-              <div class="text-div-of2 relative left-[100px] top-[100px]">
-                <p class="para1 sora-font text-[20px]">Under Price</p>
-                <h2 class="  adlam-display-regular text-[32px] font-regular">Pet Grooming Mitt</h2>
-                <h3 class="para1 adlam-display-regular text-[24px] text-[#FFFFFF]">(Easy Hair Removal)</h3>
-                <h1 class="para2 adlam-display-regular text-[56px] font-regular">$7.99</h1>
-              </div>
-                <img class="img-div23 xl:relative xl:left-[400px] xl:top-[-170px] img-puppies xl:w-[382.49px] xl:h-[480px]" src="c1-assets/cute-dog-mid.png" alt="">
-            </div>
-
-
-            <div class="right-div-card2 bg-gradient-to-b from-[#FFF9F4] to-[#F9DF8A] rounded-[12px]  xl:w-[512px] h-[480px]">
-                <div class="relative top-[50px] left-[60px]">
-                    <h3 class="adlam-display-regular text-[32px] font-regular">T-Shirt for Dogs</h3>
-                <h1 class="adlam-display-regular text-[56px] font-regular text-[#FFDC26]">$7.99</h1>
+    <div class="conatiner-div-middle xl:pb-[300px]">
+        <div class="mid-containe2 flex flex-col justify-center">
+            <h1 class="text-left pb-[20px] pl-[40px] adlam-display-regular text-[36px]  text-offf">Everyday low Price
+            </h1>
+            <div class="div-2 flex justify-center gap-[20px]">
+                <div
+                    class="left  text-left bg-gradient-to-b from-[#F8CCFB] to-[#ACD2FD] rounded-[12px] xl:w-[789px] h-[480px]">
+                    <div class="text-div-of2 relative left-[100px] top-[100px]">
+                        <p class="para1 sora-font text-[20px]">Under Price</p>
+                        <h2 class="  adlam-display-regular text-[32px] font-regular">Pet Grooming Mitt</h2>
+                        <h3 class="para1 adlam-display-regular text-[24px] text-[#FFFFFF]">(Easy Hair Removal)</h3>
+                        <h1 class="para2 adlam-display-regular text-[56px] font-regular">$7.99</h1>
+                    </div>
+                    <img class="img-div23 xl:relative xl:left-[400px] xl:top-[-170px] img-puppies xl:w-[382.49px] xl:h-[480px]"
+                        src="c1-assets/cute-dog-mid.png" alt="">
                 </div>
-                <img class=" w-[312px] h-[392px] relative left-[170px] top-[-40px]" src="c1-assets/cute-pet-mid.png" alt="">
+
+
+                <div
+                    class="right-div-card2 bg-gradient-to-b from-[#FFF9F4] to-[#F9DF8A] rounded-[12px]  xl:w-[512px] h-[480px]">
+                    <div class="relative top-[50px] left-[60px]">
+                        <h3 class="adlam-display-regular text-[32px] font-regular">T-Shirt for Dogs</h3>
+                        <h1 class="adlam-display-regular text-[56px] font-regular text-[#FFDC26]">$7.99</h1>
+                    </div>
+                    <img class=" w-[312px] h-[392px] relative left-[170px] top-[-40px]" src="c1-assets/cute-pet-mid.png"
+                        alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- this is middle center div -->
+    <div
+        class="mid-con xl:w-[1320px] h-[491px] absolute xl:top-[3750px] xl:left-[296px] rounded-[16px] bg-[#FFF9F4] flex gap-[100px]">
+        <div class="left-card-div-of xl:pt-[36px]">
+            <img class="xl:pl-[70px]" src="c1-assets/cute-pet-mid.png" alt="">
+        </div>
+
+        <div class="right-card-div-of flex-col flex gap-[30px] pt-[100px]">
+            <h1 class="adlam-display-regular xl:text-[36px]">Get Pawsome News!</h1>
+            <p class="sora-font xl:text-[20px]">Exclusive training tips, ticks, product deals and more.</p>
+            <div class="flex flex-col gap-[20px]">
+
+                <input class="xl:w-[472px] xl:h-[67px] rounded-[8px] pl-[10px] type=" email"
+                    placeholder="Enter email...">
+                <button class="w-[164px] h-[45px] rounded-[8px] bg-[#FFDC26]">Subscribe</button>
             </div>
         </div>
 
     </div>
 
-</div>
 
 
-<!-- this is middle center div -->
- <div class="mid-con xl:w-[1320px] h-[491px] absolute xl:top-[3750px] xl:left-[296px] rounded-[16px] bg-[#FFF9F4] flex gap-[100px]">
-    <div class="left-card-div-of xl:pt-[36px]">
-        <img class="xl:pl-[70px]" src="c1-assets/cute-pet-mid.png" alt="">
-    </div>
 
-    <div class="right-card-div-of flex-col flex gap-[30px] pt-[100px]">
-        <h1 class="adlam-display-regular xl:text-[36px]">Get Pawsome News!</h1>
-        <p class="sora-font xl:text-[20px]">Exclusive training tips, ticks, product deals and more.</p>
-        <div class="flex flex-col gap-[20px]">
+    <footer class="w-[100%] h-[654px]">
+        <div class="footer-item">
+            <div class="text">
+                <div class="logo-part">
+                    <img src="c1-assets/logo-footer.png" alt="">
+                    <h1 class="text-color adlam-display-regular">Browse<span style="color:#ecc60c ;">4</span>Pets</h1>
+                </div>
+                <p class="sora-font">
+                    Discover a world of treats, toys, and <br>
+                    essentials handpicked for your furry <br>
+                    friends
+                </p>
+            </div>
 
-            <input class="xl:w-[472px] xl:h-[67px] rounded-[8px] pl-[10px] type="email" placeholder="Enter email...">
-            <button class="w-[164px] h-[45px] rounded-[8px] bg-[#FFDC26]">Subscribe</button>
+            <div class="About-part">
+                <h2>About School</h2>
+
+                <ol class="sora-font">
+                    <li><a href="#">Find a pet</a></li>
+                    <li><a href="#">Breeds</a></li>
+                    <li><a href="#">Contact us</a></li>
+
+                </ol>
+            </div>
+
+            <div class="links">
+                <h2 class="sora-font">Follow Us</h2>
+                <ol>
+                    <li><img src="c1-assets/Group 9168.png" alt=""></li>
+
+                </ol>
+            </div>
         </div>
-    </div>
 
- </div>
-
-
-
-
-     <footer class="w-[100%] h-[654px]">
-         <div class="footer-item">
-             <div class="text">
-                 <div class="logo-part">
-                     <img src="c1-assets/logo-footer.png" alt="">
-                     <h1 class="text-color adlam-display-regular">Browse<span style="color:#ecc60c ;">4</span>Pets</h1>
-                 </div>
-                 <p class="sora-font">
-                     Discover a world of treats, toys, and <br>
-                      essentials handpicked for your furry <br>
-                       friends
-                 </p>
-             </div>
-
-                 <div class="About-part">
-                     <h2>About School</h2>
-
-                     <ol class="sora-font">
-                         <li><a href="#">Find a pet</a></li>
-                         <li><a href="#">Breeds</a></li>
-                         <li><a href="#">Contact us</a></li>
-
-                     </ol>
-                 </div>
-
-                 <div class="links">
-                     <h2 class="sora-font">Follow Us</h2>
-                     <ol>
-                         <li><img src="c1-assets/Group 9168.png" alt=""></li>
-
-                     </ol>
-                 </div>
-         </div>
-
-     </footer>
+    </footer>
 
 
 
